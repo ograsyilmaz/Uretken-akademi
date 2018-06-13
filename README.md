@@ -1,2 +1,1 @@
-# Uretken-akademi
-fronted
+# fronte-boostrap-yarn-gulp
