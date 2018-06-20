@@ -151,17 +151,18 @@
                 line-height: normal;
                 letter-spacing: normal;
                 text-align: center;
+                border-radius: 4px;
+                box-shadow: 0 2px 13px 0 rgba(63, 96, 232, 0.43) transparent;
+                border: transparent 1px #3f60e8;
+                color: $main-color;
+                padding: 17px 34px;
                 &:hover {
-                    border-radius: 4px;
-                    box-shadow: 0 2px 13px 0 rgba(63, 96, 232, 0.43);
                     border: solid 1px #3f60e8;
-                    color: $main-color;
-                    padding: 17px 40px;
                 }
             }
         }
         &-learn {
-            display: inline-block;
+            display: inline;
             a {
                 color: $black-color;
                 font-family: $second-font;
@@ -172,20 +173,15 @@
                 line-height: normal;
                 letter-spacing: normal;
                 text-align: center;
+                border-radius: 4px;
+                box-shadow: 0 2px 13px 0 rgba(63, 96, 232, 0.43) transparent;
+                border: transparent 1px #3f60e8;
+                color: $main-color;
+                padding: 17px 34px;
                 &:hover {
-                    border-radius: 4px;
-                    box-shadow: 0 2px 13px 0 rgba(63, 96, 232, 0.43);
                     border: solid 1px #3f60e8;
-                    color: $main-color;
-                    padding: 17px 40px;
                 }
             }
         }
     }
-}
-
-.header-main-menu {
-    display: inline-block;
-    position: absolute;
-    top: 50%;
 }
