@@ -39,7 +39,7 @@ concat = require("gulp-concat"),
 minify_css = require("gulp-minify-css"),
 rename = require("gulp-rename"),
 htmlmin = require('gulp-htmlmin');
-
+var browserSync = require('browser-sync').create()
 
 
 
@@ -81,6 +81,7 @@ gulp.task("sass", function() {
     }))
     .pipe(rename('main.min.css'))
     .pipe(gulp.dest(assets_css_dir));
+    // .pipe(browserSync.stream());
 });
 
 
@@ -160,7 +161,7 @@ Gorev VI : bootstrap
 Bootstrap kutuphanesinin ozellestirilmis sass dosyalarının css e cevirilip public/assets/css klasorune bootstap.min.css olarak kaydedilmesi.
 
 */
-
+/* 
 gulp.task("bootstrap", function() {
     return gulp.src(dev_scss_dir + "bootstrap.scss")
     .pipe(sass())
@@ -171,7 +172,7 @@ gulp.task("bootstrap", function() {
     .pipe(gulp.dest(assets_css_dir));
 });
 
-
+ */
 
 
 
@@ -208,15 +209,26 @@ Gorev VII (file_include)
 gulp.task("watch", function() {
     gulp.watch(dev_scss_sub_dir + "*.scss", ['sass']);
     gulp.watch(dev_js_dir + "*.js", ['minify_js']);
-    gulp.watch(dev_scss_dir + "bootstrap/*.scss", ['bootstrap']);
+    // gulp.watch(dev_scss_dir + "bootstrap/*.scss", ['bootstrap']);
     gulp.watch(dev_pages_dir + "*.html", ['file_include']);
     gulp.watch(dev_layouts_dir + "*.html", ['file_include']);
     gulp.watch(dev_layouts_dir + "*/*.html", ['file_include']);
 });
 
 
-
-
+// /* /* 
+// gulp.task('browser-sync', function () {
+//     browserSync.init({
+//       notify: false,
+//       server: {
+//         baseDir: './'
+//       }
+//     })
+//     gulp.watch(dev_layouts_dir + "*/*.html", ['file_include']);
+//     gulp.watch('./scss/**/*.scss', ['css'])
+//     gulp.watch('./js/**/*.js', reload)
+//   }) */
+ 
 
 /* 
 
@@ -232,4 +244,4 @@ Gorev VII (file_include)
 
 */
 
-gulp.task("default", ["watch", "sass", "minify_js", "plugins_js", "plugins_css", "bootstrap", "file_include"]);
+gulp.task("default", ["watch", "sass", "minify_js", "plugins_js", "plugins_css", "file_include"]);
