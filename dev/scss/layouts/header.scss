@@ -63,7 +63,6 @@
 //     &-login {}
 //     &-learn {}
 // }
-
 /* 
 
     Header
@@ -87,21 +86,22 @@
 //         }
 //     }
 // }
-
 .header {
     height: 50px;
+    margin-top: 46px;
+    position: relative;
     &-logo {
         display: inline-block;
     }
     &-menu {
         display: inline-block;
-        position: absolute;
-        top: 50%;
+        // position: absolute;
+        
         margin-left: 62px;
         &-items {
             margin-right: 40px;
             display: inline-block;
-           position: relative;
+            position: relative;
             &-item {
                 a {
                     color: $black-color;
@@ -132,7 +132,45 @@
                 width: 100%;
             }
         }
+        &:before {
+            position: relative;
+        }
     }
-    &-login {}
-    &-learn {}
+    &-help-tag {
+        float: right;
+        &-login {
+            display: inline-block;
+            a {
+                color: $black-color;
+                font-family: $second-font;
+                font-size: 14px;
+                font-weight: 500;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: center;
+            }
+        }
+        &-learn {
+            display: inline-block;
+            a {
+                color: $black-color;
+                font-family: $second-font;
+                font-size: 14px;
+                font-weight: 500;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.header-main-menu{
+    display: inline-block;
+    position: absolute;
+    top:50%;
 }
