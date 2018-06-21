@@ -94,8 +94,11 @@
         display: inline-block;
     }
     &-menu {
-        display: inline-block; // position: absolute;
+        display: inline-block; 
+         position: absolute;
         margin-left: 62px;
+
+        top: 16px;
         &-items {
             margin-right: 40px;
             display: inline-block;
@@ -136,15 +139,17 @@
     &-help-tag {
         float: right;
         display: inline-block;
-        top: 50%;
+        top:16px;
         position: relative;
         &-login {
             display: inline-block;
             margin-right: 40px;
             a {
+                width: 107px;
+                height: 52px;
                 color: $black-color;
                 font-family: $second-font;
-                font-size: 14px;
+                font-size: 16px;
                 font-weight: 500;
                 font-style: normal;
                 font-stretch: normal;
@@ -152,10 +157,13 @@
                 letter-spacing: normal;
                 text-align: center;
                 border-radius: 4px;
-                box-shadow: 0 2px 13px 0 rgba(63, 96, 232, 0.43) transparent;
-                border: transparent 1px #3f60e8;
+                box-sizing: border-box;
+                width: 100%;
                 color: $main-color;
-                padding: 17px 34px;
+                padding-top: 18px;
+                padding-bottom: 16px;
+                padding-left: 46px;
+                padding-right: 17px;
                 &:hover {
                     border: solid 1px #3f60e8;
                 }
@@ -164,9 +172,11 @@
         &-learn {
             display: inline;
             a {
+                width: 107px;
+                height: 52px;
                 color: $black-color;
                 font-family: $second-font;
-                font-size: 14px;
+                font-size: 16px;
                 font-weight: 500;
                 font-style: normal;
                 font-stretch: normal;
@@ -177,7 +187,10 @@
                 box-shadow: 0 2px 13px 0 rgba(63, 96, 232, 0.43) transparent;
                 border: transparent 1px #3f60e8;
                 color: $main-color;
-                padding: 17px 34px;
+                padding-top: 18px;
+                padding-bottom: 16px;
+                padding-left: 46px;
+                padding-right: 17px;
                 &:hover {
                     border: solid 1px #3f60e8;
                 }

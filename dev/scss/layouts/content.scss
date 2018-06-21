@@ -1,0 +1,23 @@
+.content {
+    height: 806px;
+    &-main {
+        &-left {
+            &-login {
+                &-text {}
+                &-mail {}
+                &-password {}
+                &-help {}
+            }
+        }
+        &-regiht {
+            &-register {
+                &-text {}
+                &-name {}
+                &-email {}
+                &-password {}
+               
+            }
+        }
+        &-vertical-line {}
+    }
+}
