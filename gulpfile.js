@@ -161,7 +161,7 @@ Gorev VI : bootstrap
 Bootstrap kutuphanesinin ozellestirilmis sass dosyalarının css e cevirilip public/assets/css klasorune bootstap.min.css olarak kaydedilmesi.
 
 */
-/* 
+
 gulp.task("bootstrap", function() {
     return gulp.src(dev_scss_dir + "bootstrap.scss")
     .pipe(sass())
@@ -172,7 +172,7 @@ gulp.task("bootstrap", function() {
     .pipe(gulp.dest(assets_css_dir));
 });
 
- */
+
 
 
 
@@ -244,4 +244,4 @@ Gorev VII (file_include)
 
 */
 
-gulp.task("default", ["watch", "sass", "minify_js", "plugins_js", "plugins_css", "file_include"]);
+gulp.task("default", ["watch", "sass", "minify_js", "plugins_js", "plugins_css", "bootstrap", "file_include"]);
