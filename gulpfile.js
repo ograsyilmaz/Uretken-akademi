@@ -38,8 +38,9 @@ concat_css = require("gulp-concat-css"),
 concat = require("gulp-concat"),
 minify_css = require("gulp-minify-css"),
 rename = require("gulp-rename"),
-htmlmin = require('gulp-htmlmin');
-var browserSync = require('browser-sync').create()
+htmlmin = require('gulp-htmlmin'),
+// browserSync = require('browser-sync').create()
+image = require('gulp-image');
 
 
 
@@ -60,6 +61,7 @@ dev_js_dir = "dev/js/",
 dev_layouts_dir = "dev/layouts/",
 dev_pages_dir = "dev/pages/",
 dev_scss_dir = "dev/scss/",
+dev_img_dir="dev/img",
 dev_scss_sub_dir = "dev/scss/*/",
 dev_vendor_dir = "dev/vendor/";
 
@@ -129,6 +131,22 @@ gulp.task("plugins_js", function() {
     */
 });
 
+
+/* 
+
+Gorev IV : resim_min
+
+Kullanilan eklentilerde bulunan javascriptlerin (dev/vendor) birlestirilip public/assets/js klasorune plugins.min.js olarak kaydedilmesi.
+
+*/
+
+
+
+gulp.task('image', function () {
+    gulp.src(dev_img_dir+'/*')
+      .pipe(image())
+      .pipe(gulp.dest(assets_img_dir));
+  });
 
 
 
@@ -209,10 +227,11 @@ Gorev VII (file_include)
 gulp.task("watch", function() {
     gulp.watch(dev_scss_sub_dir + "*.scss", ['sass']);
     gulp.watch(dev_js_dir + "*.js", ['minify_js']);
-    // gulp.watch(dev_scss_dir + "bootstrap/*.scss", ['bootstrap']);
+    gulp.watch(dev_scss_dir + "bootstrap/*.scss", ['bootstrap']);
     gulp.watch(dev_pages_dir + "*.html", ['file_include']);
     gulp.watch(dev_layouts_dir + "*.html", ['file_include']);
     gulp.watch(dev_layouts_dir + "*/*.html", ['file_include']);
+    gulp.watch(dev_img_dir + "/*", ['image']);
 });
 
 
@@ -244,4 +263,4 @@ Gorev VII (file_include)
 
 */
 
-gulp.task("default", ["watch", "sass", "minify_js", "plugins_js", "plugins_css", "bootstrap", "file_include"]);
+gulp.task("default", ["watch", "sass", "minify_js", "plugins_js", "plugins_css", "bootstrap", "file_include","image"]);
