@@ -67,16 +67,21 @@
                 letter-spacing: normal;
                 text-align: center;
                 border-radius: 4px;
-                box-sizing: border-box;
+                // box-sizing: border-box;
                 text-decoration: none;
-                width: 100%;
+                // width: 100%;
                 color: $main-color;
                 padding-top: 18px;
                 padding-bottom: 16px;
                 padding-left: 17px;
                 padding-right: 17px;
+                border-width: 0px;
                 &:hover {
                     border: solid 1px #3f60e8;
+                    padding-top: 17px;
+                    padding-bottom: 15px;
+                    padding-left: 16px;
+                    padding-right: 16px;
                 }
             }
         }
@@ -97,15 +102,20 @@
                 letter-spacing: normal;
                 text-align: center;
                 border-radius: 4px;
-                box-sizing: border-box;
-                width: 100%;
+                // box-sizing: border-box;
+                // width: 100%;
                 color: $main-color;
                 padding-top: 18px;
                 padding-bottom: 16px;
                 padding-left: 17px;
                 padding-right: 17px;
+                border-width: 0px;
                 &:hover {
                     border: solid 1px #3f60e8;
+                    padding-top: 17px;
+                    padding-bottom: 15px;
+                    padding-left: 16px;
+                    padding-right: 16px;
                 }
             }
         }
