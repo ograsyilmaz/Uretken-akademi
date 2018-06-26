@@ -6,7 +6,7 @@
     }
     &-menu-items {
         margin-left: 62px;
-        top: 50%;
+        top: 16px;
         position: absolute;
         & #nav {
             margin: 0;
@@ -52,51 +52,61 @@
     &-help-tag {
         display: inline-block;
         &-login {
-            width: 107px;
-            height: 52px;
-            color: $black-color;
-            font-family: $second-font;
-            font-size: 16px;
-            font-weight: 500;
-            font-style: normal;
-            font-stretch: normal;
-            line-height: normal;
-            letter-spacing: normal;
-            text-align: center;
-            border-radius: 4px;
-            box-sizing: border-box;
-            width: 100%;
-            color: $main-color;
-            padding-top: 18px;
-            padding-bottom: 16px;
-            padding-left: 46px;
-            padding-right: 17px;
-            &:hover {
-                border: solid 1px #3f60e8;
+            display: inline-block;
+            a {
+                display: block;
+                width: 107px;
+                height: 52px;
+                color: $black-color;
+                font-family: $second-font;
+                font-size: 16px;
+                font-weight: 500;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: center;
+                border-radius: 4px;
+                box-sizing: border-box;
+                text-decoration: none;
+                width: 100%;
+                color: $main-color;
+                padding-top: 18px;
+                padding-bottom: 16px;
+                padding-left: 17px;
+                padding-right: 17px;
+                &:hover {
+                    border: solid 1px #3f60e8;
+                }
             }
         }
         &-learn {
-            width: 107px;
-            height: 52px;
-            color: $black-color;
-            font-family: $second-font;
-            font-size: 16px;
-            font-weight: 500;
-            font-style: normal;
-            font-stretch: normal;
-            line-height: normal;
-            letter-spacing: normal;
-            text-align: center;
-            border-radius: 4px;
-            box-sizing: border-box;
-            width: 100%;
-            color: $main-color;
-            padding-top: 18px;
-            padding-bottom: 16px;
-            padding-left: 46px;
-            padding-right: 17px;
-            &:hover {
-                border: solid 1px #3f60e8;
+            display: inline-block;
+            a {
+                display: block;
+                width: 107px;
+                height: 52px;
+                text-decoration: none;
+                color: $black-color;
+                font-family: $second-font;
+                font-size: 16px;
+                font-weight: 500;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: center;
+                border-radius: 4px;
+                box-sizing: border-box;
+                width: 100%;
+                color: $main-color;
+                padding-top: 18px;
+                padding-bottom: 16px;
+                padding-left: 17px;
+                padding-right: 17px;
+                &:hover {
+                    border: solid 1px #3f60e8;
+                }
             }
         }
     }
