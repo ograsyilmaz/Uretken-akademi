@@ -32,20 +32,21 @@
                     &:hover {
                         color: $main-color;
                     }
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        top: 100%;
+                        width: 0;
+                        height: 3px;
+                        background-color: $main-color;
+                        margin-top: 9px
+                    }
+                    &:hover:after {
+                        width: 100%;
+                    }
                 }
-                &:after {
-                    content: "";
-                    position: absolute;
-                    left: 0;
-                    top: 100%;
-                    width: 0;
-                    height: 3px;
-                    background-color: $main-color;
-                    margin-top: 9px
-                }
-                &:hover:after {
-                    width: 100%;
-                }
+               
             }
         }
     }
@@ -66,10 +67,8 @@
                 line-height: normal;
                 letter-spacing: normal;
                 text-align: center;
-                border-radius: 4px;
-                // box-sizing: border-box;
-                text-decoration: none;
-                // width: 100%;
+                border-radius: 4px; // box-sizing: border-box;
+                text-decoration: none; // width: 100%;
                 color: $main-color;
                 padding-top: 18px;
                 padding-bottom: 16px;
@@ -101,8 +100,7 @@
                 line-height: normal;
                 letter-spacing: normal;
                 text-align: center;
-                border-radius: 4px;
-                // box-sizing: border-box;
+                border-radius: 4px; // box-sizing: border-box;
                 // width: 100%;
                 color: $main-color;
                 padding-top: 18px;
@@ -117,6 +115,35 @@
                     padding-left: 16px;
                     padding-right: 16px;
                 }
+            }
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .header {
+        margin-top: 10px;
+        &-logo {
+            display: block;
+        }
+        &-menu-items {
+            margin-left: 0;
+            position: relative;
+            top: 0;
+            & #nav {
+                li {
+                    display: block;
+                }
+            }
+        }
+        &-help-tag {
+            float: none !important;
+            display: block;
+            &-login {
+                display: block;
+            }
+            &-learn {
+                display: block;
             }
         }
     }
