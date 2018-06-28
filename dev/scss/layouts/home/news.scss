@@ -42,6 +42,9 @@
     }
     &-topitem {
         &-section {
+            border-radius: 4px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 13px 0 rgba(0, 0, 0, 0.12);
             &-img {
                 display: inline-block;
                 a {
