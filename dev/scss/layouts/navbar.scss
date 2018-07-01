@@ -1,0 +1,112 @@
+.nav {
+    margin-top: 46px;
+    &-menu-items {
+        top: 16px;
+        top: 16px;
+        position: absolute;
+        ul {
+            li {
+                position: relative;
+                margin-right: 40px !important ;
+                text-align: center;
+                a {
+                    display: block;
+                    color: $black-color;
+                    font-family:  $main-font;
+                    font-size: 14px;
+                    font-weight: 500;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    text-align: center;
+                    text-decoration: none;
+                    &:hover {
+                        color: $main-color;
+                    }
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        top: 100%;
+                        width: 0;
+                        height: 3px;
+                        background-color: $main-color;
+                        margin-top: 9px
+                    }
+                    &:hover:after {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    &-help-tag {
+        display: inline-block;
+        &-login {
+            display: inline-block;
+            a {
+                display: block;
+                width: 107px;
+                height: 52px;
+                color: $black-color;
+                font-family: $second-font;
+                font-size: 16px;
+                font-weight: 500;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: center;
+                border-radius: 4px; // box-sizing: border-box;
+                text-decoration: none; // width: 100%;
+                color: $main-color;
+                padding-top: 18px;
+                padding-bottom: 16px;
+                padding-left: 17px;
+                padding-right: 17px;
+                border-width: 0px;
+                &:hover {
+                    border: solid 1px #3f60e8;
+                    padding-top: 17px;
+                    padding-bottom: 15px;
+                    padding-left: 16px;
+                    padding-right: 16px;
+                }
+            }
+        }
+        &-learn {
+            display: inline-block;
+            a {
+                display: block;
+                width: 107px;
+                height: 52px;
+                text-decoration: none;
+                color: $black-color;
+                font-family: $second-font;
+                font-size: 16px;
+                font-weight: 500;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: center;
+                border-radius: 4px; // box-sizing: border-box;
+                // width: 100%;
+                color: $main-color;
+                padding-top: 18px;
+                padding-bottom: 16px;
+                padding-left: 17px;
+                padding-right: 17px;
+                border-width: 0px;
+                &:hover {
+                    border: solid 1px #3f60e8;
+                    padding-top: 17px;
+                    padding-bottom: 15px;
+                    padding-left: 16px;
+                    padding-right: 16px;
+                }
+            }
+        }
+    }
+}

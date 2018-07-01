@@ -5,6 +5,7 @@
 @import "base/classes";
 @import "base/typography";
 
+
 // Layout
 @import "layouts/layout";
 @import "layouts/header";
@@ -12,6 +13,8 @@
 @import "layouts/footer";
 @import "layouts/watcht";
 @import "layouts/responsive";
+@import "layouts/navbar";
 
 //Home
 @import "layouts/home/news";
+
