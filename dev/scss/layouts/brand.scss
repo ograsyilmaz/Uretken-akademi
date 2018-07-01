@@ -1,0 +1,47 @@
+.brand {
+    padding-top: 41px;
+    background-color: $main-color;
+    &-text {
+        h1 {
+            font-family: $main-font;
+            font-size: 26px;
+            font-weight: 600;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            color: $white-color;
+            margin-bottom: 15px;
+        }
+        p {
+            font-family: $main-font;
+            font-size: 21px;
+            font-weight: 500;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: left;
+            color: $white-color;
+        }
+    }
+    &-button {
+        button {
+            width: 200px;
+            height: 65px;
+            font-family: $main-font;
+            font-size: 14px;
+            font-weight: 500;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            color: $main-color;
+            border-radius: 4px;
+            background-color: $white-color;
+            box-shadow: 0 2px 13px 0 rgba(255, 255, 255, 0.26);
+        }
+    }
+}
