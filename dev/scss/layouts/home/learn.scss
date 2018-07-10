@@ -1,0 +1,90 @@
+.learn {
+    margin-bottom: 69px;
+    &-items {
+        display: flex;
+        flex-basis: 100%;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+        &-content {
+            margin-left: 28px;
+            &-icon {
+               margin-top: 40px;
+               margin-right: 89px;
+            }
+            h2 {
+                font-family: $main-font;
+                font-size: 14px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: left;
+                color: $main-color;
+                margin-bottom: 10px;
+                margin-top: 36px;
+            }
+            &_hood {
+                font-family: $main-font;
+                font-size: 19px;
+                font-weight: 600;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: left;
+                color: #4a4a4a;
+                margin-bottom: 10px;
+            }
+            &_text {
+                font-family: $main-font;
+                font-size: 14px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: left;
+                color: #212924;
+            }
+        }
+        &-hr {
+            hr {
+                border: none;
+                width: 1px;
+                left: 50%;
+                margin-left: -3px;
+                top: 0;
+                height: 92px;
+                border-left: solid 1px rgba(151, 151, 151, 0.24);
+            }
+        }
+        &-link {
+            font-family: $main-font;
+            font-size: 18px;
+            font-weight: 600;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: left;
+            color: $main-color;
+            margin-top: 66px;
+
+            
+        }
+    }
+
+    &-link{
+        font-family: $main-font;
+        font-size: 19px;
+        font-weight: 600;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #9b9b9b;
+        text-decoration: none;
+    }
+}
