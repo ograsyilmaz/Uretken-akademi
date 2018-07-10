@@ -1,6 +1,11 @@
 .news {
+    margin-top: 85px;
+    margin-bottom: 58px;
     &-learn {
+        margin-top: 62px;
+      
         h1 {
+            margin-bottom: 28px;
             font-family: $main-font;
             font-size: 36px;
             font-weight: 600;
@@ -12,6 +17,7 @@
             color: $main-color;
         }
         p {
+            margin-bottom: 30px;
             opacity: 0.5;
             font-family: $main-font;
             font-size: 16px;
@@ -42,6 +48,7 @@
     }
     &-topitem {
         &-section {
+            margin-bottom: 15px;
             border-radius: 4px;
             background-color: #ffffff;
             box-shadow: 0 2px 13px 0 rgba(0, 0, 0, 0.12);
@@ -60,8 +67,10 @@
             &-text {
                 display: inline-block;
                 position: absolute;
+                padding-left: 25px;
                 h2 {
                     font-family: $main-font;
+                    padding-top: 28px;
                     font-size: 16px;
                     font-weight: 500;
                     font-style: normal;
@@ -71,7 +80,7 @@
                     text-align: left;
                     color: #212924;
                 }
-                &-chapter{
+                &-chapter {
                     font-family: $main-font;
                     font-size: 13px;
                     font-weight: 500;
@@ -81,8 +90,9 @@
                     letter-spacing: normal;
                     text-align: left;
                     color: #f04546;
+                    padding-top: 15px;
                 }
-                &-content{
+                &-content {
                     font-family: $main-font;
                     font-size: 13px;
                     font-weight: normal;
@@ -91,9 +101,9 @@
                     line-height: normal;
                     letter-spacing: normal;
                     text-align: left;
+                    padding-top: 15px;
                     color: #9b9b9b;
                 }
-
             }
         }
     }

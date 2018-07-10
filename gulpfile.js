@@ -30,17 +30,17 @@ html dosyalarını minify etmeye yarar, js kodundaki kırılımlar olmadığı s
 */
 
 var gulp = require("gulp"),
-sass = require("gulp-sass"),
-uglify_js = require("gulp-uglifyjs"),
-minify = require("gulp-minify"),
-file_include = require("gulp-file-include"),
-concat_css = require("gulp-concat-css"),
-concat = require("gulp-concat"),
-minify_css = require("gulp-minify-css"),
-rename = require("gulp-rename"),
-htmlmin = require('gulp-htmlmin'),
-// browserSync = require('browser-sync').create()
-image = require('gulp-image');
+    sass = require("gulp-sass"),
+    uglify_js = require("gulp-uglifyjs"),
+    minify = require("gulp-minify"),
+    file_include = require("gulp-file-include"),
+    concat_css = require("gulp-concat-css"),
+    concat = require("gulp-concat"),
+    minify_css = require("gulp-minify-css"),
+    rename = require("gulp-rename"),
+    htmlmin = require('gulp-htmlmin'),
+    // browserSync = require('browser-sync').create()
+    image = require('gulp-image');
 
 
 
@@ -52,18 +52,18 @@ Dev (dev) klasorunde projenin yapilandirilandigi klasorler ve dosyalar bulunur.
 */
 
 var public_dir = "public/",
-assets_dir = public_dir + "assets/",
-assets_css_dir = public_dir + "assets/css/",
-assets_js_dir = public_dir + "assets/js/",
-assets_img_dir = public_dir + "assets/img/",
-dev_dir = "dev/",
-dev_js_dir = "dev/js/",
-dev_layouts_dir = "dev/layouts/",
-dev_pages_dir = "dev/pages/",
-dev_scss_dir = "dev/scss/",
-dev_img_dir="dev/img",
-dev_scss_sub_dir = "dev/scss/*/",
-dev_vendor_dir = "dev/vendor/";
+    assets_dir = public_dir + "assets/",
+    assets_css_dir = public_dir + "assets/css/",
+    assets_js_dir = public_dir + "assets/js/",
+    assets_img_dir = public_dir + "assets/img/",
+    dev_dir = "dev/",
+    dev_js_dir = "dev/js/",
+    dev_layouts_dir = "dev/layouts/",
+    dev_pages_dir = "dev/pages/",
+    dev_scss_dir = "dev/scss/",
+    dev_img_dir = "dev/img",
+    dev_scss_sub_dir = "dev/scss/*/",
+    dev_vendor_dir = "dev/vendor/";
 
 
 
@@ -75,15 +75,15 @@ Ana sass dosyasini (dev/scss/main.scss) css'e cevir ve cevirilen css dosyasini m
 
 */
 
-gulp.task("sass", function() {
+gulp.task("sass", function () {
     return gulp.src(dev_scss_dir + "main.scss")
-    .pipe(sass())
-    .pipe(minify_css({
-        compatibility: 'ie8'
-    }))
-    .pipe(rename('main.min.css'))
-    .pipe(gulp.dest(assets_css_dir));
-    // .pipe(browserSync.stream());
+        .pipe(sass())
+        .pipe(minify_css({
+            compatibility: 'ie8'
+        }))
+        .pipe(rename('main.min.css'))
+        .pipe(gulp.dest(assets_css_dir));
+
 });
 
 
@@ -99,16 +99,16 @@ dev/js içinde bulunan tüm dosyaları alıp minify ederek public/assets/js içi
 
 
 
-gulp.task("minify_js", function() {
+gulp.task("minify_js", function () {
     return gulp.src(dev_js_dir + "*.js")
-    .pipe(minify({
-        ext:{
-            src:false,
-            min:'.min.js'
-        },
-        noSource: "*"
-    }))
-    .pipe(gulp.dest(assets_js_dir));
+        .pipe(minify({
+            ext: {
+                src: false,
+                min: '.min.js'
+            },
+            noSource: "*"
+        }))
+        .pipe(gulp.dest(assets_js_dir));
 });
 
 
@@ -123,7 +123,7 @@ Kullanilan eklentilerde bulunan javascriptlerin (dev/vendor) birlestirilip publi
 */
 
 
-gulp.task("plugins_js", function() {
+gulp.task("plugins_js", function () {
     /*return gulp.src()
     .pipe(concat("plugins.min.js"))
     .pipe(uglify_js())
@@ -143,10 +143,10 @@ Kullanilan eklentilerde bulunan javascriptlerin (dev/vendor) birlestirilip publi
 
 
 gulp.task('image', function () {
-    gulp.src(dev_img_dir+'/*')
-      .pipe(image())
-      .pipe(gulp.dest(assets_img_dir));
-  });
+    gulp.src(dev_img_dir + '/*')
+        .pipe(image())
+        .pipe(gulp.dest(assets_img_dir));
+});
 
 
 
@@ -158,7 +158,7 @@ Kullanilan eklentilerde bulunan css'lerin (dev/vendor) birlestirilip public/asse
 
 */
 
-gulp.task("plugins_css", function() {
+gulp.task("plugins_css", function () {
     /*
     return gulp.src()
     .pipe(concat_css("plugins.min.css"))
@@ -180,14 +180,14 @@ Bootstrap kutuphanesinin ozellestirilmis sass dosyalarının css e cevirilip pub
 
 */
 
-gulp.task("bootstrap", function() {
+gulp.task("bootstrap", function () {
     return gulp.src(dev_scss_dir + "bootstrap.scss")
-    .pipe(sass())
-    .pipe(minify_css({
-        compatibility: 'ie8'
-    }))
-    .pipe(rename('bootstrap.min.css'))
-    .pipe(gulp.dest(assets_css_dir));
+        .pipe(sass())
+        .pipe(minify_css({
+            compatibility: 'ie8'
+        }))
+        .pipe(rename('bootstrap.min.css'))
+        .pipe(gulp.dest(assets_css_dir));
 });
 
 
@@ -201,14 +201,17 @@ Parcalanmis html sablonlarini birlestirilmesi ve /public dizinine kaydedilmesi.
 
 */
 
-gulp.task('file_include', function() {
+gulp.task('file_include', function () {
     return gulp.src(dev_pages_dir + "*.html")
-    .pipe(file_include({
-        prefix: '@@',
-        basepath: '@file'
-    }))
-    .pipe(htmlmin({collapseWhitespace: true, minifyJS: true}))
-    .pipe(gulp.dest(public_dir));
+        .pipe(file_include({
+            prefix: '@@',
+            basepath: '@file'
+        }))
+        .pipe(htmlmin({
+            collapseWhitespace: true,
+            minifyJS: true
+        }))
+        .pipe(gulp.dest(public_dir));
 });
 
 
@@ -224,7 +227,7 @@ Gorev VII (file_include)
 
 */
 
-gulp.task("watch", function() {
+gulp.task("watch", function () {
     gulp.watch(dev_scss_sub_dir + "*.scss", ['sass']);
     gulp.watch(dev_js_dir + "*.js", ['minify_js']);
     gulp.watch(dev_scss_dir + "bootstrap/*.scss", ['bootstrap']);
@@ -247,7 +250,7 @@ gulp.task("watch", function() {
 //     gulp.watch('./scss/**/*.scss', ['css'])
 //     gulp.watch('./js/**/*.js', reload)
 //   }) */
- 
+
 
 /* 
 
@@ -263,4 +266,4 @@ Gorev VII (file_include)
 
 */
 
-gulp.task("default", ["watch", "sass", "minify_js", "plugins_js", "plugins_css", "bootstrap", "file_include","image"]);
+gulp.task("default", ["watch", "sass", "minify_js", "plugins_js", "plugins_css", "bootstrap", "file_include", "image"]);
