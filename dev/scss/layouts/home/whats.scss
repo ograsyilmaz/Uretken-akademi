@@ -1,0 +1,100 @@
+.whats {
+    margin-bottom: 168px;
+    &-title {
+        margin-bottom: 50px;
+        h1 {
+            font-family: $main-font;
+            font-size: 26px;
+            font-weight: 600;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            color: #4a4a4a;
+        }
+    }
+    &-me {
+        margin-top: 20px;
+        &-content {
+            &-1 {
+                margin-bottom: 35px;
+                .svg-item {
+                    width: 16px;
+                    height: 25px;
+                }
+                span {
+                    display: inline-block;
+                    font-family: $main-font;
+                    font-size: 20px;
+                    font-weight: 500;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    text-align: center;
+                    color: #4a4a4a;
+                    position: absolute;
+                    margin-left: 15px;
+                }
+            }
+            &-2 {
+                margin-bottom: 29px;
+                &-title {
+                    margin-bottom: 15px;
+                    font-family: $main-font;
+                    font-size: 20px;
+                    font-weight: 500;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    text-align: center;
+                    color: $main-color;
+                    display: inline-block;
+                    margin-left: 15px;
+                }
+                .svg-bottom {
+                    width: 25px;
+                    height: 16px;
+                }
+                &-content {
+                    font-family: Asap;
+                    font-size: 17px;
+                    font-weight: normal;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: 1.47;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color: #9b9b9b;
+                    margin-left: 40px;
+                }
+            }
+            &-3 {
+                .svg-item {
+                    width: 16px;
+                    height: 25px;
+                }
+                span {
+                    display: inline-block;
+                    font-family: $main-font;
+                    font-size: 20px;
+                    font-weight: 500;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    text-align: center;
+                    color: #4a4a4a;
+                    position: absolute;
+                    margin-left: 15px;
+                }
+            }
+        }
+    }
+
+    &-img{
+
+    }
+}
