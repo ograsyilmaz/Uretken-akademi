@@ -3,3 +3,5 @@
 cmd //
 
 yarn gulp
+
+https://ograsyilmaz.github.io/Uretken-akademi/public/home.html
