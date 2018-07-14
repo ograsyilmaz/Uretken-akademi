@@ -13,3 +13,12 @@
         margin-bottom: 43.9px;
     }
 }
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .supportes {
+        text-align: center;
+        &-text {
+            text-align: center;
+        }
+    }
+}

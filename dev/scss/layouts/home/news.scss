@@ -3,7 +3,6 @@
     margin-bottom: 58px;
     &-learn {
         margin-top: 62px;
-      
         h1 {
             margin-bottom: 28px;
             font-family: $main-font;
@@ -108,4 +107,16 @@
         }
     }
     &-topitem-more {}
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .news {
+        margin-top: 25px;
+        &-topitem {
+            margin-top: 25px;
+        }
+        &-learn {
+            margin-top: 0;
+        }
+    }
 }
