@@ -61,3 +61,13 @@
         }
     }
 }
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .footer {
+        &-speednav {
+            &-slogan {
+                margin-top: 25px;
+            }
+        }
+    }
+}

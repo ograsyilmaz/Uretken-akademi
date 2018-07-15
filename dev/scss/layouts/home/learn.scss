@@ -88,3 +88,21 @@
         text-decoration: none;
     }
 }
+
+
+
+
+
+@media (min-width: 320px) and (max-width: 768px) {
+
+
+    .learn {
+        &-items{
+            &-content-icon{
+                text-align: center;
+            }
+        }
+    }
+
+
+}
