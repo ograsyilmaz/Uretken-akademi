@@ -64,7 +64,7 @@ var public_dir = "public/",
     dev_img_dir = "dev/img",
     dev_scss_sub_dir = "dev/scss/*/",
     dev_vendor_dir = "dev/vendor/";
-
+    dev_scss_sub_dir_watch = "dev/scss/**/",
 
 
 
@@ -81,6 +81,7 @@ gulp.task("sass", function () {
         .pipe(minify_css({
             compatibility: 'ie8'
         }))
+        .pipe(sass().on('error', sass.logError))
         .pipe(rename('main.min.css'))
         .pipe(gulp.dest(assets_css_dir));
 
@@ -186,6 +187,7 @@ gulp.task("bootstrap", function () {
         .pipe(minify_css({
             compatibility: 'ie8'
         }))
+        
         .pipe(rename('bootstrap.min.css'))
         .pipe(gulp.dest(assets_css_dir));
 });
@@ -228,7 +230,7 @@ Gorev VII (file_include)
 */
 
 gulp.task("watch", function () {
-    gulp.watch(dev_scss_sub_dir + "*.scss", ['sass']);
+    gulp.watch(dev_scss_sub_dir_watch + "*.scss", ['sass']);
     gulp.watch(dev_js_dir + "*.js", ['minify_js']);
     gulp.watch(dev_scss_dir + "bootstrap/*.scss", ['bootstrap']);
     gulp.watch(dev_pages_dir + "*.html", ['file_include']);
