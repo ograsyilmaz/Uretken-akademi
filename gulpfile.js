@@ -64,28 +64,28 @@ var public_dir = "public/",
     dev_img_dir = "dev/img/**",
     dev_scss_sub_dir = "dev/scss/*/",
     dev_vendor_dir = "dev/vendor/";
-    dev_scss_sub_dir_watch = "dev/scss/**/",
+dev_scss_sub_dir_watch = "dev/scss/**/",
 
 
 
-/* 
-Gorev I : sass
+    /* 
+    Gorev I : sass
 
-Ana sass dosyasini (dev/scss/main.scss) css'e cevir ve cevirilen css dosyasini minify edilip public/assets/css klasorune main.min.css olarak kaydedilmesi.
+    Ana sass dosyasini (dev/scss/main.scss) css'e cevir ve cevirilen css dosyasini minify edilip public/assets/css klasorune main.min.css olarak kaydedilmesi.
 
-*/
+    */
 
-gulp.task("sass", function () {
-    return gulp.src(dev_scss_dir + "main.scss")
-        .pipe(sass())
-        .pipe(minify_css({
-            compatibility: 'ie8'
-        }))
-        .pipe(sass().on('error', sass.logError))
-        .pipe(rename('main.min.css'))
-        .pipe(gulp.dest(assets_css_dir));
+    gulp.task("sass", function () {
+        return gulp.src(dev_scss_dir + "main.scss")
+            .pipe(sass())
+            .pipe(minify_css({
+                compatibility: 'ie8'
+            }))
+            .pipe(sass().on('error', sass.logError))
+            .pipe(rename('main.min.css'))
+            .pipe(gulp.dest(assets_css_dir));
 
-});
+    });
 
 
 
@@ -187,7 +187,7 @@ gulp.task("bootstrap", function () {
         .pipe(minify_css({
             compatibility: 'ie8'
         }))
-        
+
         .pipe(rename('bootstrap.min.css'))
         .pipe(gulp.dest(assets_css_dir));
 });
