@@ -886,12 +886,12 @@ textarea {
   font-size: 20px;
   font-weight: 500;
   line-height: normal;
+  letter-spacing: normal;
   text-align: center;
   margin-left: 15px;
-  display: inline-block;
   font-style: normal;
   font-stretch: normal;
-  letter-spacing: normal; }
+  display: inline-block; }
 
 .whats-me {
   margin-top: 20px; }
@@ -930,6 +930,13 @@ textarea {
   color: #9b9b9b;
   margin-left: 40px; }
 
+.education-details-btn, .whats-me-content-3 span {
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal; }
+
 .whats-me-content-3 .svg-item {
   width: 16px;
   height: 25px; }
@@ -938,12 +945,31 @@ textarea {
   display: inline-block;
   font-family: Asap,sans-serif;
   font-size: 20px;
-  font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
   text-align: center;
   color: #4a4a4a;
   position: absolute;
   margin-left: 15px; }
+
+.education-details {
+  height: 500px; }
+
+.education-details-logo {
+  margin-top: 105px; }
+
+.education-details-bg {
+  background-image: url(../img/learn/mind-control-drones.png);
+  width: 100%;
+  background-size: cover;
+  height: 500px; }
+
+.education-details-btn {
+  font-family: Asap;
+  font-size: 16px;
+  text-align: left;
+  color: #e84c3c;
+  width: 200px;
+  height: 50px;
+  object-fit: contain;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0 2px 13px 0 rgba(232, 76, 60, 0.49); }

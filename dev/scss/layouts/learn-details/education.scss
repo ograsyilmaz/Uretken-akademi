@@ -1,0 +1,31 @@
+.education-details {
+    &-logo {
+        margin-top: 105px;
+    }
+    height: 500px;
+    &-bg {
+        background-image: url("../img/learn/mind-control-drones.png");
+        width: 100%;
+        height: auto;
+        background-size: cover;
+        height: 500px;
+    }
+    &-play-button {}
+    &-btn {
+        font-family: Asap;
+        font-size: 16px;
+        font-weight: 500;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #e84c3c;
+        width: 200px;
+        height: 50px;
+        object-fit: contain;
+        border-radius: 4px;
+        background-color: #ffffff;
+        box-shadow: 0 2px 13px 0 rgba(232, 76, 60, 0.49);
+    }
+}
