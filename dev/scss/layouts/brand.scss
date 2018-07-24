@@ -2,7 +2,9 @@
     padding-top: 41px;
     background-color: $main-color;
     padding-bottom: 49px;
-    background-image:url('../img/group-31.png');
+    background-image: url('../img/group-31.png');
+    background-position: center center;
+    background-repeat: no-repeat;
     &-text {
         h1 {
             font-family: $main-font;
