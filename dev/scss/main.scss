@@ -4,26 +4,20 @@
 @import "base/normalize";
 @import "base/classes";
 @import "base/typography";
-
-
 // Layout
 @import "layouts/layout";
 @import "layouts/header";
-@import "layouts/content";
+@import "layouts/login-singup/login-singin-singup";
 @import "layouts/footer";
-@import "layouts/watcht";
 @import "layouts/responsive";
 @import "layouts/navbar";
 @import "layouts/brand";
 @import "layouts/footers";
-
 //Home
 @import "layouts/home/news";
 @import "layouts/home/supportes";
 @import "layouts/home/nicewords";
 @import "layouts/home/learn";
 @import "layouts/home/whats";
-
 //learn-details
-
 @import "layouts/learn-details/education";
