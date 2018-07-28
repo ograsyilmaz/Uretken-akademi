@@ -6,12 +6,30 @@
     &-bg {
         background-image: url("../img/learn/mind-control-drones.png");
         width: 100%;
-        height: auto;
-        background-size: cover;
         height: 500px;
+        max-height: auto;
+        background-size: cover;
+    
     }
     &-play-button {
         color: red;
+        margin-top: 15px;
+        .svg-item {
+            width: 20px;
+            height: 20px;
+        }
+        &-sub-text {
+            font-family: Asap;
+            font-size: 11px;
+            font-weight: 500;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: left;
+            color: #ffffff;
+            vertical-align: super;
+        }
     }
     &-btn {
         font-family: Asap;
