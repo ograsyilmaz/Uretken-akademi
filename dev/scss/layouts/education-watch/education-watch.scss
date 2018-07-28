@@ -1,0 +1,226 @@
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+.wrapper {
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+#sidebar {
+	min-width: 250px;
+	max-width: 250px;
+	background: #2b3e8a;
+	color: #fff;
+    transition: all 0.3s;
+    box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.3);
+	.sidebar-header {
+		padding: 20px;
+		background: #2b3e8a;
+	}
+	ul.components {
+		padding: 20px 0;
+		border-bottom: 1px solid #47748b;
+	}
+}
+#sidebar.active {
+	margin-left: -250px;
+}
+.previous-education {
+	position: relative;
+	color: #fff;
+	&:hover {
+		color: #fff;
+	}
+	svg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		font-size: 24px;
+	}
+}
+
+.education-info {
+	padding-left: 20px;
+	h6 {
+		margin-bottom: 10px;
+		font-weight: 300;
+	}
+	h3 {
+		font-weight: 600;
+	}
+}
+a[aria-expanded="true"] {
+	color: #fff;
+	background: #2b3e8a;
+}
+a[data-toggle="collapse"] {
+	position: relative;
+}
+.dropdown-toggle {
+	&::after {
+		display: block;
+		position: absolute;
+		top: 50%;
+		right: 20px;
+		transform: translateY(-50%);
+	}
+}
+ul {
+	ul {
+		a {
+			font-size: 0.9em !important;
+			padding-left: 30px !important;
+			background: #2b3e8a;
+		}
+	}
+}
+ul.CTAs {
+	padding: 20px;
+	a {
+		text-align: center;
+		font-size: 0.9em !important;
+		display: block;
+		border-radius: 5px;
+		margin-bottom: 5px;
+	}
+}
+a.download {
+	background: #fff;
+	color: #7386D5;
+}
+a.article {
+	background: #2b3e8a !important;
+	color: #fff !important;
+	&:hover {
+		background: #2b3e8a !important;
+		color: #fff !important;
+	}
+}
+#content {
+	width: 100%;
+	padding: 20px;
+	min-height: 100vh;
+    transition: all 0.3s;
+    background: #f6f7fb;
+    .navbar {
+        padding: 15px 0;
+        .btn {
+            background: transparent;
+            padding: 0;
+            svg {
+                color: #2c3e8a;
+                font-size: 24px;
+            }
+        }
+        .btn.focus,
+        .btn:focus {
+            box-shadow: none;
+        }
+    }
+}
+@media (max-width: 768px) {
+	#sidebar {
+		margin-left: -250px;
+	}
+	#sidebar.active {
+		margin-left: 0;
+	}
+	#sidebarCollapse {
+		span {
+			display: none;
+		}
+	}
+}
+
+.nav-tabs {
+    border-bottom: solid 1px rgba(255, 255, 255, 0.2);
+    display: flex;
+    justify-content: space-around;
+    .nav-link {
+        color: #fff;
+        border: none;
+        font-size: 18px !important;
+    }
+    .nav-link.active {
+        border-bottom: 1px solid #fff;
+        background: transparent;
+        color: #fff;
+    }
+}
+
+.course-list {
+    padding: 15px;
+    li {
+        .svg-item {
+            width: 27px;
+            height: 27px;
+            display: inline-block;
+        }
+        p{
+            display: inline-block;
+            margin-left: 10px;
+        }
+    }
+    li a {
+        color: #fff;
+        display: flex;
+        align-items: center;
+        padding: 10px 0;
+        text-decoration: none
+    }
+    li.previous {
+        .svg-item {
+            opacity: 0.7;
+        }
+    }
+    li.active {
+        .svg-item {
+            opacity: 1;
+        }
+    }
+    li.next {
+        .course-list-next-item {
+            background: rgba(216, 216, 216, 0.39);
+            width: 27px;
+            height: 27px;
+            display: inline-block;
+            border-radius: 50%;
+        }
+    }
+}
+
+.video-wrapper {
+    .video-title {
+        background-color: #182555;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        padding: 19px 15px;
+    }
+    .video-description {
+        padding: 30px 0;
+    }
+
+    .next-btn {
+        background-color: #3f60e8;
+        box-shadow: 0 2px 18px 0 rgba(0, 0, 0, 0.06);
+        width: 100%;
+        color: #fff;
+        padding: 19px 15px;
+        text-decoration: none;
+        display: block;
+        border-radius: 4px;
+        text-align: center
+    }
+}
+
+@media (max-width: 767px) {
+    .next-btn {
+        margin-top: 30px;
+    }
+}
