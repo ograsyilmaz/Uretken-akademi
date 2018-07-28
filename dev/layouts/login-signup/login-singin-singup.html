@@ -1,58 +1,64 @@
 <div class="content">
     <div class="container">
-       <div class="content-main">
-           <div class="content-main-left">
-                <div class="content-main-left-login">
-                    <div class="content-main-left-login-text">
-                        <h1>Giriş Yap</h1>
-                        <p>Hemen giriş yap.</p>
-                    </div>
-                   <form>
-                       <div class="content-main-left-login-mail">
-                           <p>Mail Adresi</p>
-                           <input type="text" name="email" id="">
-                       </div>
-                       <div class="content-main-left-login-password">
-                           <p>Şifre</p>
-                        <input type="password" name="password" id="">
-                       </div>
-                       <div class="content-main-left-login-help">
-                           <input type="checkbox" name="" id="">
-                           <p>Beni Hatırla</p>
-                           <a href="">Şifre Unutum</a>
-                       </div>
-                       <input type="submit" value="Giriş Yap">
-                   </form>
-                </div>
-           </div>
-           <div class="content-main-vertical-line">
+        <div class="row">
+            <div class="col-md-6">
+                <h1 class="login-title">Giriş Yap</h1>
+                <p class="title-description">Hemen giriş yap.</p>
 
-           </div>
-           <div class="content-main-regiht">
-                <div class="content-main-regiht-register">
-                        <div class="content-main-regiht-register-text">
-                            <h1>Kayıt ol</h1>
-                            <p>Hesabın yok mu ? Hemen kayıt ol.</p>
+                <form class="form-css">
+                    <div class="row">
+                        <div class="col-md-9 col-sm-12">
+                            <div class="form-group">
+                                <label class="form-label" for="email">Mail Adresi</label>
+                                <input type="email" name="email" id="email" placeholder="Email@example.com" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="password">Şifre</label>
+                                <input type="password" name="password" id="password" placeholder="Şifre" class="form-control login-input-pw" psswd-shown="false">
+                                <p id="login-toggle">GÖSTER</p>
+                            </div>
+                            <div class="form-group">
+                                <input class="styled-checkbox" id="styled-checkbox-1" type="checkbox" value="value1">
+                                <label for="styled-checkbox-1">Beni Hatırla</label>
+
+                                <a href="#" class="password-forget">Şifremi unuttum</a>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" value="Giriş Yap">
+                            </div>
                         </div>
-                        <form>
-                                <div class="content-main-regiht-register-name">
-                                    <p>İsim Soyisim</p>
-                                    <input type="text" name="name" id="">
+                    </div>
+                    
+                </form>
+            </div>
+            <div class="col-md-6">
+                    <h1 class="login-title">Kayıt Ol</h1>
+                    <p class="title-description">Hesabın yok mu ? Hemen kayıt ol.</p>
+    
+                    <form class="form-css vertical-line">
+                        <div class="row">
+                            <div class="col-md-9 col-sm-12">
+                                <div class="form-group">
+                                    <label class="form-label" for="name">İsim Soyisim</label>
+                                    <input type="text" name="name" id="name" placeholder="Ad Soyad" class="form-control">
                                 </div>
-                                <div class="content-main-regiht-register-email">
-                                    <p>Mail Adresi</p>
-                                    <input type="email" name="register-email" id="">
+                                <div class="form-group">
+                                    <label class="form-label" for="email2">Mail Adresi</label>
+                                    <input type="email" name="email2" id="email2" placeholder="Email@example.com" class="form-control">
                                 </div>
-                                <div class="content-main-regiht-register-password">
-                                    <p>Şifre</p>
-                                    <input type="password" name="register-password" id="">
+                                <div class="form-group">
+                                    <label class="form-label" for="password2">Şifre</label>
+                                    <input type="password" name="password2" id="password2" placeholder="Şifre" class="form-control signup-input-pw" psswd-shown="false">
+                                    <p id="signup-toggle">GÖSTER</p>
                                 </div>
-                                <input type="submit" value="Kayıt Ol">
-                        </form>
+                                <div class="form-group">
+                                    <input type="submit" value="Kayıt Ol">
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </form>
                 </div>
         </div>
-
-
-       </div>
     </div>
 </div>

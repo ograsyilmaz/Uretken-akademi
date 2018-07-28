@@ -1,7 +1,9 @@
 .content {
-    height: 806px;
+    padding: 100px 0;
     &-main {
         &-left {
+            width: 50%;
+            float: left;
             &-login {
                 &-text {}
                 &-mail {}
@@ -9,7 +11,9 @@
                 &-help {}
             }
         }
-        &-regiht {
+        &-right {
+            width:50%;
+            float:right;
             &-register {
                 &-text {}
                 &-name {}
@@ -21,3 +25,168 @@
         &-vertical-line {}
     }
 }
+
+.login-title {
+    font-family: Asap;
+    font-size: 32px;
+    font-weight: 500;
+    color: #212924;
+}
+
+.title-description {
+    font-family: Asap;
+    font-size: 18px;
+    color: #9b9b9b;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.form-label {
+    font-family: Asap;
+    font-size: 16px;
+    font-weight: 600;
+    color: #4a4a4a;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.form-css {
+    position: relative;
+    & input.form-control {
+        border-radius: 4px;
+        background-color: #ffffff;
+        border: solid 2px rgba(151, 151, 151, 0.25);
+        padding: 20px 15px;
+    }
+
+    & input[type="submit"] {
+        display:block;
+        width: 100%;
+        border-radius: 4px;
+        background-color: #3f60e8;
+        color: #fff;
+        padding: 20px;
+    }
+
+    & .form-group {
+        margin-bottom: 40px;
+        position: relative;
+    }
+
+    & #login-toggle,
+    & #signup-toggle, {
+        position: absolute;
+        top: 58px;
+        right: 25px;
+        font-size: 14px;
+        font-weight: 600;
+        color: #3f60e8;
+        cursor: pointer
+    }
+
+    & .password-forget {
+        font-family: Asap;
+        font-size: 14px;
+        font-weight: 600;
+        color: #4a4a4a;
+        display: inline-block;
+        float: right
+    }
+
+    &.vertical-line:before {
+        position: absolute;
+        content: "";
+        width: 1px;
+        height: 100%;
+        height: calc(100% - 40px);
+        top: 0;
+        left: -80px;
+        background: #979797;
+    }
+}
+
+.styled-checkbox {
+    position: absolute; // take it out of document flow
+    opacity: 0; // hide it
+  
+    & + label {
+      position: relative;
+      cursor: pointer;
+      padding: 0;
+      font-family: Asap;
+      font-size: 14px;
+      font-weight: 600;
+      color: #4a4a4a;
+    }
+  
+    // Box.
+    & + label:before {
+      content: '';
+      margin-right: 10px;
+      display: inline-block;
+      vertical-align: middle;
+      width: 25px;
+      height: 25px;
+      border-radius: 4px;
+      border: solid 2px #4a4a4a;
+    }
+    
+    // Box focus
+    &:focus + label:before {
+      box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+    }
+  
+    // Box checked
+    &:checked + label:before {
+      background: #4a4a4a;
+    }
+    
+    // Disabled state label.
+    &:disabled + label {
+      color: #b8b8b8;
+      cursor: auto;
+    }
+  
+    // Disabled box.
+    &:disabled + label:before {
+      box-shadow: none;
+      background: #ddd;
+    }
+  
+    // Checkmark. Could be replaced with an image
+    &:checked + label:after {
+      content: '';
+      position: absolute;
+      left: 7px;
+      top: 11px;  
+      background: white;
+      width: 2px;
+      height: 2px;
+      box-shadow: 
+        2px 0 0 white,
+        4px 0 0 white,
+        4px -2px 0 white,
+        4px -4px 0 white,
+        4px -6px 0 white,
+        4px -8px 0 white;
+      transform: rotate(45deg);
+    }
+  }
+
+
+  @media (max-width: 991px) {
+      .form-css {
+        &.vertical-line:before {
+            left: -60px
+        }
+      }
+  }
+
+  @media (max-width: 767px) {
+    .form-css {
+      &.vertical-line:before {
+          display: none
+      }
+    }
+}
+  
