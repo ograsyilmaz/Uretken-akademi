@@ -1088,10 +1088,8 @@ textarea {
   margin-top: 105px; }
 
 .education-details-bg {
-  background-image: url(../img/learn/mind-control-drones.png);
   width: 100%;
   height: 500px;
-  max-height: auto;
   background-size: cover; }
 
 .education-details-play-button {
