@@ -1012,14 +1012,16 @@ textarea {
 .whats-me-content-1 span, .whats-me-content-2-title {
   font-family: Asap,sans-serif;
   font-size: 20px;
-  font-weight: 500;
   line-height: normal;
-  letter-spacing: normal;
   text-align: center;
-  margin-left: 15px;
+  margin-left: 15px; }
+
+.whats-me-content-1 span, .whats-me-content-2-title, .whats-me-content-3 span {
+  display: inline-block;
+  font-weight: 500;
   font-style: normal;
   font-stretch: normal;
-  display: inline-block; }
+  letter-spacing: normal; }
 
 .whats-me {
   margin-top: 20px; }
@@ -1058,25 +1060,27 @@ textarea {
   color: #9b9b9b;
   margin-left: 40px; }
 
-.education-details-btn, .whats-me-content-3 span {
-  font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal; }
-
 .whats-me-content-3 .svg-item {
   width: 16px;
   height: 25px; }
 
 .whats-me-content-3 span {
-  display: inline-block;
   font-family: Asap,sans-serif;
   font-size: 20px;
+  line-height: normal;
   text-align: center;
   color: #4a4a4a;
   position: absolute;
   margin-left: 15px; }
+
+.education-details-btn, .education-details-play-button-sub-text {
+  font-family: Asap;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left; }
 
 .education-details {
   height: 500px; }
@@ -1085,18 +1089,25 @@ textarea {
   margin-top: 105px; }
 
 .education-details-bg {
-  background-image: url(../img/learn/mind-control-drones.png);
   width: 100%;
-  background-size: cover;
-  height: 500px; }
+  height: 500px;
+  background-size: cover; }
 
 .education-details-play-button {
-  color: red; }
+  color: red;
+  margin-top: 15px; }
+
+.education-details-play-button .svg-item {
+  width: 20px;
+  height: 20px; }
+
+.education-details-play-button-sub-text {
+  font-size: 11px;
+  color: #fff;
+  vertical-align: super; }
 
 .education-details-btn {
-  font-family: Asap;
   font-size: 16px;
-  text-align: left;
   color: #e84c3c;
   width: 200px;
   height: 50px;
