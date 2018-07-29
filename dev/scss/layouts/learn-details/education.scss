@@ -1,13 +1,15 @@
 .education-details {
+    margin-bottom: 52px;
     &-logo {
         margin-top: 105px;
     }
     height: 500px;
     &-bg {
-        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+       background-position: fixed;
+       border-radius: 4px;
         height: 500px;
-        background-repeat:no-repeat;
-        background-size: 100% 100%;
     }
     &-play-button {
         color: red;
