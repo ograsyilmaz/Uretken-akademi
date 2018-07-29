@@ -4,12 +4,10 @@
     }
     height: 500px;
     &-bg {
-        
         width: 100%;
         height: 500px;
-        
-        background-size: cover;
-    
+        background-repeat:no-repeat;
+        background-size: 100% 100%;
     }
     &-play-button {
         color: red;
