@@ -3,12 +3,14 @@
     &-logo {
         margin-top: 105px;
     }
-    padding:79px 52px 0;
+
+    padding-top: 79px;
+    padding-bottom: 52px;
     &-bg {
         background-size: cover;
         background-repeat: no-repeat;
-       background-position: fixed;
-       border-radius: 4px;
+        background-position: fixed;
+        border-radius: 4px;
         height: 500px;
     }
     &-play-button {
@@ -41,11 +43,36 @@
         letter-spacing: normal;
         text-align: left;
         color: #e84c3c;
-        width: 200px;
-        height: 50px;
+        width: 100%;
         object-fit: contain;
         border-radius: 4px;
         background-color: #ffffff;
         box-shadow: 0 2px 13px 0 rgba(232, 76, 60, 0.49);
+        padding: 16px 37.5px;
+        text-align: center;
     }
+}
+
+// @media (min-width: 320px) and (max-width: 768px) {
+//     .education-details {
+//         &-btn {
+//             width: calc(50% - 20px);
+//             margin-left: 10px;
+//             margin-right: 10px;
+//         }
+//     }
+// }
+
+@media (max-width: 991px) {
+    .education-details {
+        &-btn {
+            width: calc(50% - 20px);
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+
 }

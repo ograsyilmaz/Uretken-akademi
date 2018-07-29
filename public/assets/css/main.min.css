@@ -616,6 +616,9 @@ textarea {
   padding: 40px 0;
   position: relative; }
 
+.brand, .education-bg {
+  background-repeat: no-repeat; }
+
 .navbar-nav {
   margin-left: 62px; }
 
@@ -677,8 +680,7 @@ textarea {
   background-color: #3f60e8;
   padding-bottom: 49px;
   background-image: url(../img/group-31.png);
-  background-position: center center;
-  background-repeat: no-repeat; }
+  background-position: center center; }
 
 .brand-text h1 {
   font-family: Asap,sans-serif;
@@ -1012,16 +1014,14 @@ textarea {
 .whats-me-content-1 span, .whats-me-content-2-title {
   font-family: Asap,sans-serif;
   font-size: 20px;
+  font-weight: 500;
   line-height: normal;
   text-align: center;
-  margin-left: 15px; }
-
-.whats-me-content-1 span, .whats-me-content-2-title, .whats-me-content-3 span {
-  display: inline-block;
-  font-weight: 500;
+  margin-left: 15px;
   font-style: normal;
   font-stretch: normal;
-  letter-spacing: normal; }
+  letter-spacing: normal;
+  display: inline-block; }
 
 .whats-me {
   margin-top: 20px; }
@@ -1065,59 +1065,61 @@ textarea {
   height: 25px; }
 
 .whats-me-content-3 span {
+  display: inline-block;
   font-family: Asap,sans-serif;
   font-size: 20px;
-  line-height: normal;
-  text-align: center;
-  color: #4a4a4a;
-  position: absolute;
-  margin-left: 15px; }
-
-.education-details-btn, .education-details-play-button-sub-text {
-  font-family: Asap;
   font-weight: 500;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
   letter-spacing: normal;
-  text-align: left; }
+  text-align: center;
+  color: #4a4a4a;
+  position: absolute;
+  margin-left: 15px; }
 
-.education-details {
-  margin-bottom: 52px;
-  padding: 79px 52px 0; }
+.education {
+  padding-top: 79px;
+  padding-bottom: 52px; }
 
-.education-details-logo {
-  margin-top: 105px; }
-
-.education-details-bg {
+.education-bg {
   background-size: cover;
-  background-repeat: no-repeat;
   background-position: fixed;
   border-radius: 4px;
   height: 500px; }
 
-.education-details-play-button {
-  color: red;
-  margin-top: 15px; }
-
-.education-details-play-button .svg-item {
+.education .svg-item {
   width: 20px;
-  height: 20px; }
+  height: 20px;
+  display: inline-block; }
 
-.education-details-play-button-sub-text {
-  font-size: 11px;
-  color: #fff;
-  vertical-align: super; }
+.education-group {
+  padding-top: 105px;
+  padding-left: 4.786324786324787%;
+  padding-right: 4.786324786324787%; }
 
-.education-details-btn {
+.education-group .button-btn {
+  font-family: Asap;
   font-size: 16px;
+  font-weight: 500;
+  padding: 15px 3.1623931623931623%;
+  text-align: left;
   color: #e84c3c;
-  width: 200px;
-  height: 50px;
-  object-fit: contain;
   border-radius: 4px;
   background-color: #fff;
-  box-shadow: 0 2px 13px 0 rgba(232, 76, 60, 0.49); }
+  box-shadow: 0 2px 13px 0 rgba(232, 76, 60, 0.49);
+  display: inline;
+  width: 100%; }
+
+.education-group .education-text-watch {
+  vertical-align: super; }
+
+.education-group .btn-grup .btn-grup-box {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  position: absolute;
+  width: 100%; }
 
 .wrapper {
   display: flex;

@@ -1,0 +1,48 @@
+.education {
+    padding-top: 79px;
+    padding-bottom: 52px;
+    &-bg {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: fixed;
+        border-radius: 4px;
+        height: 500px;
+    }
+    .svg-item {
+        width: 20px;
+        height: 20px;
+        display: inline-block
+    }
+    &-group {
+        padding-top: 105px;
+        padding-left: 4.786324786324787%;
+        padding-right: 4.786324786324787%;
+        .button-btn {
+            text-align: center;
+            font-family: Asap;
+            font-size: 16px;
+            font-weight: 500;
+            padding: 15px 3.1623931623931623%;
+            text-align: left;
+            color: #e84c3c;
+            border-radius: 4px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 13px 0 rgba(232, 76, 60, 0.49);
+            display: inline;
+            width: 100%;
+        }
+        .education-text-watch {
+            vertical-align: super;
+        }
+        .btn-grup{
+            .btn-grup-box {
+                display: flex;
+                align-items: center;
+                height: 100%;
+                position: absolute;
+                width: 100%;
+            }
+        }
+        
+    }
+}
