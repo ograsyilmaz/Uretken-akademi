@@ -1016,11 +1016,11 @@ textarea {
   font-size: 20px;
   font-weight: 500;
   line-height: normal;
+  letter-spacing: normal;
   text-align: center;
   margin-left: 15px;
   font-style: normal;
   font-stretch: normal;
-  letter-spacing: normal;
   display: inline-block; }
 
 .whats-me {
@@ -1060,6 +1060,12 @@ textarea {
   color: #9b9b9b;
   margin-left: 40px; }
 
+.education-group .education-commet, .whats-me-content-3 span {
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal; }
+
 .whats-me-content-3 .svg-item {
   width: 16px;
   height: 25px; }
@@ -1069,10 +1075,6 @@ textarea {
   font-family: Asap,sans-serif;
   font-size: 20px;
   font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
   text-align: center;
   color: #4a4a4a;
   position: absolute;
@@ -1098,12 +1100,15 @@ textarea {
   padding-left: 4.786324786324787%;
   padding-right: 4.786324786324787%; }
 
+.education-group .flext {
+  align-items: center; }
+
 .education-group .button-btn {
+  text-align: center;
   font-family: Asap;
   font-size: 16px;
   font-weight: 500;
   padding: 15px 3.1623931623931623%;
-  text-align: left;
   color: #e84c3c;
   border-radius: 4px;
   background-color: #fff;
@@ -1111,18 +1116,42 @@ textarea {
   display: inline;
   width: 100%; }
 
-.education-group .education-text-watch {
-  vertical-align: super; }
+.education-group .btn-grup .btn-grup-box, .wrapper {
+  display: flex; }
 
-.education-group .btn-grup .btn-grup-box {
-  display: flex;
-  align-items: center;
-  height: 100%;
-  position: absolute;
-  width: 100%; }
+.education-group .education-title {
+  margin-top: 10px;
+  font-family: Asap;
+  font-size: 26px;
+  font-weight: 400;
+  text-align: left;
+  color: #fff; }
+
+.education-group .education-heading {
+  font-family: Asap;
+  font-size: 34px;
+  font-weight: 600;
+  margin-top: 50px;
+  text-align: left;
+  color: #fff; }
+
+.education-group .education-commet {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+  color: #fff;
+  margin-top: 54px;
+  margin-bottom: 51px; }
+
+.education-text-watch {
+  font-family: Asap;
+  font-size: 11px;
+  font-weight: 500;
+  text-align: left;
+  color: #fff;
+  padding: 5px; }
 
 .wrapper {
-  display: flex;
   width: 100%;
   align-items: stretch; }
 
@@ -1303,5 +1332,7 @@ a.article, a.article:hover {
   text-align: center; }
 
 @media (max-width: 767px) {
+  .btn-grup {
+    margin-top: 20px; }
   .next-btn {
     margin-top: 30px; } }
