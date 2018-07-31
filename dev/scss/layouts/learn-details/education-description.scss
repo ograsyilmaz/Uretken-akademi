@@ -1,0 +1,86 @@
+.education-description {
+    margin-top: 136px;
+    margin-bottom: 161px;
+    &-number {
+        .top-icon {
+            max-width: 309px;
+            width: 100%;
+            height: 5px;
+            margin-bottom: 70px;
+            display: block;
+        }
+        .cash-icon {
+            width: 57px;
+            height: 57px;
+            display: block;
+        }
+        p {
+            font-family: Asap;
+            font-size: 1.3125rem;
+            line-height: 1.62;
+            text-align: left;
+            color: #4a4a4a;
+            .blue-text {
+                font-family: Asap;
+                color: #1a91a1;
+                font-weight: 600;
+            }
+            .black-text {
+                font-family: Asap;
+                color: #4a4a4a;
+            }
+            .black-semibold-text {
+                font-weight: 600;
+                color: #4a4a4a;
+            }
+        }
+    }
+    &-what {
+        h1 {
+            font-family: Asap;
+            font-size: 2.125rem;
+            font-weight: 600;
+            text-align: left;
+            color: #4a4a4a;
+            padding-bottom: 30px;
+        }
+        p {
+            font-family: Asap;
+            font-size: 1.0625rem;
+            text-align: left;
+            color: #4a4a4a;
+        }
+    }
+    &-user {
+        .icon-group{
+            margin-bottom: 8px;
+            margin-top: 63px;
+            display: block;
+        }
+        .bottom-icon {
+            
+            max-width: 309px;
+            width: 100%;
+            height: 5px;
+            display: block;
+           
+        }
+        p {
+            font-family: Asap;
+            font-size: 1.3125rem;
+            line-height: 1.62;
+            text-align: left;
+            color: #4a4a4a;
+            .semibold {
+                font-weight: 600;
+            }
+            .regular {
+                font-weight: 200;
+            }
+            .medium {
+                font-weight: 400;
+            }
+            margin-bottom: 106px;
+        }
+    }
+}

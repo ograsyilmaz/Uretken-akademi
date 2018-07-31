@@ -1116,9 +1116,6 @@ textarea {
   display: inline;
   width: 100%; }
 
-.education-group .btn-grup .btn-grup-box, .wrapper {
-  display: flex; }
-
 .education-group .education-title {
   margin-top: 10px;
   font-family: Asap;
@@ -1143,6 +1140,9 @@ textarea {
   margin-top: 54px;
   margin-bottom: 51px; }
 
+.education-group .btn-grup .btn-grup-box {
+  display: flex; }
+
 .education-text-watch {
   font-family: Asap;
   font-size: 11px;
@@ -1155,10 +1155,77 @@ textarea {
   .btn-grup {
     margin-top: 20px; } }
 
+.education-info {
+  margin-bottom: 138px; }
+
+.education-info-time-title {
+  font-family: Asap;
+  font-size: .875rem;
+  font-weight: 600;
+  text-align: left;
+  color: #9b9b9b;
+  margin-bottom: 5px; }
+
+.education-info-time-day {
+  font-family: Asap;
+  font-size: 1.6875rem;
+  font-weight: 600;
+  text-align: left;
+  color: #212924;
+  margin-bottom: 6px; }
+
+.education-info-time-description {
+  font-family: Asap;
+  font-size: .75rem;
+  font-weight: 500;
+  text-align: left;
+  color: #9b9b9b; }
+
 .education-info-verticalline {
   width: 3px;
   height: 72px;
   border-left: solid 1px rgba(151, 151, 151, 0.25); }
+
+.education-info-condition-title {
+  font-family: Asap;
+  font-size: .875rem;
+  font-weight: 600;
+  text-align: left;
+  color: #9b9b9b;
+  margin-bottom: 8px; }
+
+.education-info-condition-description {
+  font-family: Asap;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-align: left;
+  color: #212924;
+  margin-bottom: 11px; }
+
+.education-info-condition a {
+  font-family: Asap;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: left;
+  color: #3f60e8; }
+
+.education-info-evaluation-title {
+  font-family: Asap;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: left;
+  color: #9b9b9b;
+  margin-bottom: 10px; }
+
+.education-info-evaluation-description {
+  font-family: Asap;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: left;
+  color: #9b9b9b; }
+
+.education-info-evaluation .education-info-star {
+  margin-bottom: 8px; }
 
 .education-info-evaluation .education-info-star .svg-item {
   width: 25px;
@@ -1166,7 +1233,97 @@ textarea {
   margin-top: 0 !important;
   margin-bottom: 0 !important; }
 
+.education-info-platfrom-title {
+  font-family: Asap;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: left;
+  color: #9b9b9b; }
+
+@media (max-width: 768px) {
+  .education-info-verticalline {
+    display: none; } }
+
+.education-description {
+  margin-top: 136px;
+  margin-bottom: 161px; }
+
+.education-description-number .top-icon {
+  max-width: 309px;
+  width: 100%;
+  height: 5px;
+  margin-bottom: 70px;
+  display: block; }
+
+.education-description-number .cash-icon {
+  width: 57px;
+  height: 57px;
+  display: block; }
+
+.education-description-number p {
+  font-family: Asap;
+  font-size: 1.3125rem;
+  line-height: 1.62;
+  text-align: left;
+  color: #4a4a4a; }
+
+.education-description-number p .blue-text {
+  font-family: Asap;
+  color: #1a91a1;
+  font-weight: 600; }
+
+.education-description-number p .black-text {
+  font-family: Asap;
+  color: #4a4a4a; }
+
+.education-description-number p .black-semibold-text {
+  font-weight: 600;
+  color: #4a4a4a; }
+
+.education-description-what h1 {
+  font-family: Asap;
+  font-size: 2.125rem;
+  font-weight: 600;
+  text-align: left;
+  color: #4a4a4a;
+  padding-bottom: 30px; }
+
+.education-description-what p {
+  font-family: Asap;
+  font-size: 1.0625rem;
+  text-align: left;
+  color: #4a4a4a; }
+
+.education-description-user .icon-group {
+  margin-bottom: 8px;
+  margin-top: 63px;
+  display: block; }
+
+.education-description-user .bottom-icon {
+  max-width: 309px;
+  width: 100%;
+  height: 5px;
+  display: block; }
+
+.education-description-user p {
+  font-family: Asap;
+  font-size: 1.3125rem;
+  line-height: 1.62;
+  text-align: left;
+  color: #4a4a4a;
+  margin-bottom: 106px; }
+
+.education-description-user p .semibold {
+  font-weight: 600; }
+
+.education-description-user p .regular {
+  font-weight: 200; }
+
+.education-description-user p .medium {
+  font-weight: 400; }
+
 .wrapper {
+  display: flex;
   width: 100%;
   align-items: stretch; }
 
