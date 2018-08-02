@@ -681,6 +681,7 @@ textarea {
   background-repeat: no-repeat; }
 
 .education-bg, .education-start-bg {
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: fixed; }
 
@@ -1087,7 +1088,6 @@ textarea {
   padding-bottom: 52px; }
 
 .education-bg {
-  background-size: cover;
   border-radius: 4px;
   height: 500px; }
 
@@ -1314,6 +1314,13 @@ textarea {
   color: #4a4a4a;
   margin-bottom: 106px; }
 
+.education-start-rectangle .btn-buttonedu, .education-start-rectangle .rantangle-description, .education-start-rectangle .rantangle-title {
+  font-family: Asap;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal; }
+
 .education-description-user p .semibold {
   font-weight: 600; }
 
@@ -1323,11 +1330,71 @@ textarea {
 .education-description-user p .medium {
   font-weight: 400; }
 
+.education-start {
+  margin-top: 230px; }
+
+.education-start .text-center {
+  text-align: center; }
+
 .education-start-bg {
-  background-size: cover;
   border-radius: 4px;
   height: 533px;
   background-image: url(../img/learn/group-31.svg); }
+
+.education-start-rectangle {
+  margin: 0 auto;
+  max-width: 439px;
+  width: 100%;
+  height: 309px;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 2px 23px 0 rgba(0, 0, 0, 0.12);
+  background-color: #fff;
+  border: 2px solid #a43428; }
+
+.education-start-rectangle-triangletick {
+  position: relative;
+  float: right; }
+
+.education-start-rectangle-triangletick-triangle {
+  width: 0;
+  height: 0;
+  border-top: 75px solid #a43428;
+  border-left: 75px solid transparent; }
+
+.education-start-rectangle-triangletick .svg-icon {
+  top: 13px;
+  position: absolute;
+  display: inline;
+  left: 37px; }
+
+.education-start-rectangle-triangletick .svg-icon .svg-item {
+  width: 26px;
+  height: 20px; }
+
+.education-start-rectangle .rantangle-title {
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+  color: #4a4a4a;
+  margin-bottom: 29px; }
+
+.education-start-rectangle .rantangle-description {
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  color: #9b9b9b;
+  margin-bottom: 51px; }
+
+.education-start-rectangle .btn-buttonedu {
+  font-size: 17px;
+  font-weight: 500;
+  text-align: center;
+  color: #a43428;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0 2px 13px 0 rgba(74, 74, 74, 0.18);
+  padding: 22px 63px 23px 62px; }
 
 .wrapper {
   display: flex;
