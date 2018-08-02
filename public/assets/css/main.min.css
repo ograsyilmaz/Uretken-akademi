@@ -616,9 +616,6 @@ textarea {
   padding: 40px 0;
   position: relative; }
 
-.brand, .education-bg {
-  background-repeat: no-repeat; }
-
 .navbar-nav {
   margin-left: 62px; }
 
@@ -680,7 +677,12 @@ textarea {
   background-color: #3f60e8;
   padding-bottom: 49px;
   background-image: url(../img/group-31.png);
-  background-position: center center; }
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+.education-bg, .education-start-bg {
+  background-repeat: no-repeat;
+  background-position: fixed; }
 
 .brand-text h1 {
   font-family: Asap,sans-serif;
@@ -1086,7 +1088,6 @@ textarea {
 
 .education-bg {
   background-size: cover;
-  background-position: fixed;
   border-radius: 4px;
   height: 500px; }
 
@@ -1321,6 +1322,12 @@ textarea {
 
 .education-description-user p .medium {
   font-weight: 400; }
+
+.education-start-bg {
+  background-size: cover;
+  border-radius: 4px;
+  height: 533px;
+  background-image: url(../img/learn/group-31.svg); }
 
 .wrapper {
   display: flex;

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="533px" viewBox="0 0 1440 533" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>2AF00603-037D-43CF-A9E1-6451DE11953D</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <polygon id="path-1" points="0 350 1440 0 1440 533 0 533"></polygon>
+    </defs>
+    <g id="Tasarımlar" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Eğitim-Detay" transform="translate(0.000000, -2548.000000)">
+            <g id="Group-31" transform="translate(0.000000, 2548.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#A43428" xlink:href="#path-1"></use>
+                <g mask="url(#mask-2)" stroke="#FFFFFF">
+                    <g transform="translate(17.000000, -210.000000)">
+                        <circle id="Oval" cx="560" cy="732" r="17"></circle>
+                        <circle id="Oval" cx="1188.5" cy="567.5" r="31.5"></circle>
+                        <circle id="Oval-Copy-2" cx="882.5" cy="401.5" r="31.5"></circle>
+                        <circle id="Oval-Copy-4" cx="362.5" cy="370.5" r="31.5"></circle>
+                        <circle id="Oval" cx="756.5" cy="721.5" r="27.5"></circle>
+                        <circle id="Oval" cx="509" cy="696" r="9"></circle>
+                        <circle id="Oval" cx="125" cy="584" r="17"></circle>
+                        <circle id="Oval-Copy-5" cx="633" cy="433" r="17"></circle>
+                        <circle id="Oval" cx="19" cy="678" r="10"></circle>
+                        <circle id="Oval" cx="276" cy="735" r="17"></circle>
+                        <circle id="Oval" cx="9.5" cy="557.5" r="9.5"></circle>
+                        <circle id="Oval" cx="850.5" cy="590.5" r="9.5"></circle>
+                        <circle id="Oval" cx="497.5" cy="610.5" r="9.5"></circle>
+                        <circle id="Oval" cx="1207.5" cy="727.5" r="57.5"></circle>
+                        <circle id="Oval-Copy-6" cx="1322.5" cy="416.5" r="57.5"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
